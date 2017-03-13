@@ -133,8 +133,10 @@ namespace Microsoft.WindowsAzure.MediaServices.Client
         public int ProtectionKeyType {get;set;}
         [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         public string Checksum {get;set;}
-        [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+	    [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         public string AuthorizationPolicyId{get;set;}
+        [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        public string TrackIdentifiers { get; set; }
 
         ContentKeyType IContentKey.ContentKeyType
         {
